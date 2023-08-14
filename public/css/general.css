@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Poppinshttps://fonts.googleapis.com/css?family=Poppinshttps://fonts.googleapis.com/css?family=Poppinshttps://fonts.googleapis.com/css?family=Poppinshttps://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.conteudo{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("/imagem/pexels-pixabay-164686.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: #f1cf00;
+}
+
+.header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+.nav{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav,
+.nav_item{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_logo,
+.nav_link,
+.button{
+    color: #fff;
+}
+.nav_logo{
+    font-size: 25px;
+}
+
+.nav_item{
+    column-gap: 25px;
+}
+
+.nav_link:hover{
+    color: #00826b;
+}
+
+
+.footer{
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00826b;
+    color: #f1cf00;
+    text-align: center;
+}
+
+.contas
+{
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 200px 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    text-align: center;
+}
+
+.quadro{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+
+}
+
+.botoes-link{
+   background-color: #00826b;
+   border-style: solid;
+   border-width: 2px;
+   border-color: #f1cf00;
+}
+
+.botoes-link a{
+    color: #f1cf00;
+}
+
+.botoes-link, .contas{
+    position: relative;
+ }
+.linka{
+    border-top-left-radius: 50px;
+}
+.linkb{
+    border-top-right-radius: 50px;
+}
+.linkc{
+    border-bottom-left-radius: 50px;
+}
+.linkd{
+    border-bottom-right-radius: 50px;
+}
+
+.botoes{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*TESTE*/

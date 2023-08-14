@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.table{
+    width: 100%;
+}
+
+.table_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1cf00;
+}
+
+.table_header p{
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+}
+
+td button:nth-child(1){
+    background-color: #00826b;
+}
+
+td button:nth-child(2){
+    background-color: #00826b;
+}
+
+.add_new{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #00826b;
+}
+
+input{
+    padding: 10px 20px;
+    margin:  0 10px;
+    outline: none;
+    border: 1px solid #00826b;
+    border-radius: 6px;
+    color: #00826b;
+}
+
+::placeholder{
+    color: #00826b;
+}
+
+.table_section{
+    height: 500px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+
+th, td{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+
+tr:hover td{
+    color: #00826b;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar{
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.linka{
+    color: #fff;
+}
