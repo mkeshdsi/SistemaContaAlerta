@@ -36,7 +36,7 @@
         <i class="uil uil-times form_close"></i>
         <!--Login Form-->
             <div class="form login_form">
-                <form action="{{ URL::to('/indexAction') }}" method="POST">
+                <form action="{{ url('/ContaAlerta/login') }}" method="post">
                     @csrf
                     <h2>Entrar</h2>
                     <div class="input_box">
@@ -61,11 +61,9 @@
                     <button class="button" value="0" name="nnovo">
                         Entrar
                     </button>
-                    <!--
                     <div class="login_signup">
                        N&atilde;o tem conta&#63; <a href="#" id="signup">Cadastre&#45;se</a>
-                    </div>
-                    -->
+                    </div>              
                 </form>
             </div>
 
@@ -73,7 +71,8 @@
 
                     <!--Signup form--> 
                 <div class="form signup_form">
-                <form action="indexAction.php" method="POST">
+                <form action="{{ url('/ContaAlerta/create') }}" method="post">
+                    @csrf
                     <h2>Cadastrar</h2>
                     <div class="input_box">
                         <input type="text" name="usuario" placeholder="Coloque o seu usuario" required>

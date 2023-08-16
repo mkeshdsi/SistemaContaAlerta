@@ -1,8 +1,8 @@
 <?php
 
 namespace App\ClassesExternas;
-
-include_once 'Encipty.php';
+include_once 'Cifras.php';
+//use App\ClassesExternas\Cifras;
 
     class Login  extends Cifras{
 

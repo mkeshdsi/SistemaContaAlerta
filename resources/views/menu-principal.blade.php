@@ -24,7 +24,7 @@
                     <div class="botoes-link linka"><a href="{{ url('/ContaAlerta/ContaSave') }}" class="botoes">Nova conta</a></div>
                     <div class="botoes-link linkb"><a href="#" class="botoes">Recarregar conta</a></div>
                     <div class="botoes-link linkc"><a href="#" class="botoes">Actualizar conta</a></div>
-                    <div class="botoes-link linkd"><a href="./phpcode/contas-registradas.php" class="botoes">Listar contas</a></div>
+                    <div class="botoes-link linkd"><a href="{{ url('/ContaAlerta/contas-disponiveis') }}" class="botoes">Listar contas</a></div>
                 </section>
             </div>
        </div>

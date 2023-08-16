@@ -22,6 +22,12 @@ Route::get('/ContaAlerta', function () {
     return view('index');
 });
 
+//AUTENTICACAO
+Route::post('/ContaAlerta/login',[App\Http\Controllers\LogginController::class,'loginUser']);
+
+//CRIAR USUARIO 
+Route::post('/ContaAlerta/create',[App\Http\Controllers\LogginController::class,'novoUser']);
+
 //MENU PRINCIPAL
 Route::get('/ContaAlerta/menu-principal', function () {
     return view('menu-principal');
@@ -40,6 +46,7 @@ Route::ANY('/ContaAlerta/ContaSave', function () {
 //RECAREGAR CONTA
 Route::post('/ContaAlerta/Contasave/recarga',[App\Http\Controllers\SalvarContaController::class,'recarregarConta']);
 
+//CRIAR NOVA CONTA
 Route::post('/ContaAlerta/Contasave/novaConta',[App\Http\Controllers\SalvarContaController::class,'salvarConta']);
 //Route::post('/indexAction',[App\Http\Controllers\LogginController::class,'loginUser']);
 //Route::get('/menu-principal',[App\Http\Controllers\LogginController::class,'menuUser']);
